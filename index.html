@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Format Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Format Converter</h1>
+    
+    <label for="images" class="drop-container" id="dropcontainer">
+      <span class="drop-title">Drop files here</span>
+      or
+      <input type="file" id="imageInput" accept="image/*" required>
+    </label>
+    <select id="formatSelect">
+      <option value="image/jpeg">JPG</option>
+      <option value="image/png">PNG</option>
+      <option value="image/webp">WebP</option>
+    </select>
+        
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="preview" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffeaturewallprints.com.au%2Fwp-content%2Fuploads%2F2017%2F04%2FUpload-Your-Photo.jpg&f=1&nofb=1&ipt=c26b25c06fc0d1d08bcdd7a4322766df5e8776c8acff6325be2845a760af7b3d" alt="Preview" />
+    <button id="convertBtn">Convert & Download</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
